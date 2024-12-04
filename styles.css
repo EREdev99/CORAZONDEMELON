@@ -11,7 +11,7 @@ body, html {
 
 /* Montañas estilizadas */
 .mountains {
-   position: fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -108,5 +108,65 @@ button:hover {
   background: #3730a3;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+  }
 
+  .milk-and-mocha {
+    width: 20%; /* Aumenta un poco el tamaño */
+    bottom: 20%; /* Ajusta posición vertical */
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Para móviles grandes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .milk-and-mocha {
+    width: 0%; /* Más grande para que se vea bien */
+    //bottom: 15%; /* Alineado con las montañas */
+  top: 31%; /* Lo alineamos al fondo, como si estuvieran sentados */
+  left: 10%; /* Centrado horizontalmente */
+  transform: translateX(0%); /* Ajustamos para que esté perfectamente centrado */
+  width: 0%; /* Ajustamos el tamaño de la imagen según lo necesitemos */
+  }
+
+  .mountains {
+    height: 60%; /* Aumenta el tamaño visible de las montañas */
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .milk-and-mocha {
+    width: 35%; /* Más grande en pantallas pequeñas */
+    bottom: 10%; /* Alineado con las montañas */
+  }
+
+  .mountains {
+    height: 70%; /* Ajuste del fondo */
+  }
+
+  button {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+}
 
